@@ -591,6 +591,9 @@ section {
   margin: 1rem 0;
   line-height: 2rem;
 }
+.contact-content-con .left-contact p span {
+  color: var(--color-secondary);
+}
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
