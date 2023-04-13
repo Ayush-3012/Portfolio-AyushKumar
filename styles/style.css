@@ -669,6 +669,18 @@ section {
 .contact-content-con .right-contact .submit-btn {
   display: flex;
   justify-content: flex-start;
+  flex-direction: row;
+}
+.contact-content-con .right-contact .submit-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 /* Theme Btn */

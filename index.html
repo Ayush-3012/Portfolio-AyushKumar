@@ -42,6 +42,7 @@
             <a
               href="https://drive.google.com/file/d/12LyU-7lr5uxYLtThZ0D4vG2dAlLcROOG/view?usp=sharing"
               class="main-btn"
+              target="_blank"
             >
               <span class="btn-text">Download CV</span>
               <span class="btn-icon"><i class="fas fa-download"></i></span>
@@ -77,6 +78,7 @@
               <a
                 href="https://drive.google.com/file/d/12LyU-7lr5uxYLtThZ0D4vG2dAlLcROOG/view?usp=sharing"
                 class="main-btn"
+                target="_blank"
               >
                 <span class="btn-text">Download CV</span>
                 <span class="btn-icon"><i class="fas fa-download"></i></span>
@@ -598,27 +600,50 @@
               </div>
             </div>
             <div class="right-contact">
-              <form action="" class="contact-form">
+              <form
+                action="contact.php"
+                method="post"
+                name="contact-form"
+                class="contact-form"
+              >
                 <div class="input-control i-c-2">
-                  <input type="text" placeholder="YOUR NAME" required />
-                  <input type="email" placeholder="YOUR E-MAIL" required />
+                  <input
+                    type="text"
+                    placeholder="YOUR NAME"
+                    name="sender_name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="YOUR E-MAIL"
+                    name="sender_email"
+                    id="email"
+                    required
+                  />
                 </div>
                 <div class="input-control">
-                  <input type="text" placeholder="ENTER SUBJECT" required />
+                  <input
+                    type="text"
+                    placeholder="ENTER SUBJECT"
+                    name="sender_subject"
+                    required
+                  />
                 </div>
                 <div class="input-control">
                   <textarea
-                    name="SUBJECT"
-                    id=""
+                    name="sender_message"
                     cols="15"
                     rows="8"
                     placeholder="Message Here..."
+                    id="message"
                   ></textarea>
                 </div>
                 <div class="submit-btn btn-con">
-                  <a href="" class="main-btn">
-                    <span class="btn-text">Submit</span>
-                    <span class="btn-icon"><i class="fas fa-share"></i> ></span>
+                  <a class="main-btn main-submit-btn">
+                    <button type="submit" id="submit">
+                      <span class="btn-text">Submit</span>
+                      <span class="btn-icon"><i class="fas fa-share"></i></span>
+                    </button>
                   </a>
                 </div>
               </form>
@@ -649,6 +674,8 @@
     <div class="theme-btn">
       <i class="fas fa-adjust"></i>
     </div>
+
     <script src="app.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>
