@@ -791,9 +791,12 @@ section {
   .portfolios {
     grid-template-columns: 1fr !important;
     padding-bottom: 6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-left: 20%;
   }
   .section {
-    padding: 6rem 6.5rem !important;
+    padding: 2rem 2.5rem !important;
   }
   .main-title h2 {
     font-size: 2rem;
@@ -803,6 +806,15 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .portfolios {
+    grid-template-columns: 1fr !important;
+    padding-bottom: 6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: fixed;
   }
 }
 @media screen and (max-width: 1432px) {
@@ -848,7 +860,7 @@ section {
     font-size: 4.5rem;
   }
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 980px) {
   .section {
     padding: 7rem 6rem;
   }
